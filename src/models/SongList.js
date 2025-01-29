@@ -21,6 +21,9 @@ class SongList {
         return song;
     }
 
+    // Mescla as propriedades de updatedData no objeto song, 
+    // substituindo apenas os valores fornecidos sem remover outras propriedades.
+    // Object.assign(destino, origem)
     updateSong(id, updatedData) {
         const song = this.getSongById(id);
         Object.assign(song, updatedData);
